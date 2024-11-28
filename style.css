@@ -1,0 +1,491 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Karla", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper-main {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  padding-top: 120px; 
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: white;
+ 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+
+.logo {
+  height: 100px;
+  width: auto;
+  flex: 0 0 auto;
+  max-height: 100px;
+  margin-right: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+nav {
+  margin-left: auto;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 4rem;
+  padding: 0.2rem 0; 
+  line-height: normal; 
+  display: inline-block;
+  vertical-align: middle; 
+  border-bottom: 3px solid transparent;
+  color: #4a5951;
+  transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #4a5951;
+  border-bottom: 3px solid #4a5951;
+}
+
+
+body.hem-vy {
+  background-image: url(tra.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px;
+}
+
+body.hem-vy .highlight-box {
+  position: fixed; 
+  top: 250px; 
+  left: 150px; 
+  background-color: #c0cbbe;
+  color: #4a5951;
+  padding: 5%;
+  width: 650px;
+  max-width: none;
+  max-height: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+body.hem-vy .highlight-box h1 {
+  font-weight: 800; 
+  font-size: 42px;
+  line-height: 1.7; 
+}
+
+body.hem-vy .highlight-box p {
+  font-weight: 600; 
+  font-size: 32px;
+  line-height: 1.7; 
+}
+
+body.hem-vy .katt-bild {
+  position: fixed; 
+  right: 20px; 
+  top: 420px; 
+  transform: translateY(-50%); 
+  width: 35%; 
+  max-width: 600px;
+  max-height: 80%;
+  height: auto;
+  object-fit: contain; 
+}
+
+
+body.info-vy {
+  background-image: url(tra.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+body.info-vy .highlight-box {
+  position: relative;
+  background-color: #c0cbbe;
+  color: #4a5951;
+  
+  padding: 5rem;
+  margin: 1rem auto;
+  margin-top: 100px; 
+  border-radius: 8px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 80%;
+  max-width: 800px;
+}
+
+body.info-vy .highlight-box h1 {
+  font-weight: 800; 
+  line-height: 1.2; 
+  margin-bottom: 20 px;
+}
+
+body.info-vy .highlight-box p {
+  font-weight: 600; 
+  line-height: 1.4; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body.info-vy .highlight-box a {
+  color: #4a5951; 
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-top: 300px;
+}
+
+
+body.info-vy .katt-bild {
+  position: fixed;
+  margin-top: 60px;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+body.laddaned-vy {
+  background-image: url(tra.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 20px;
+}
+
+body.laddaned-vy .highlight-box {
+  position: fixed; 
+  top: 200px; 
+  left: 250px;  
+  background-color: #c0cbbe;
+  padding: 5%;
+  width: 550px;
+  max-width: none;
+  max-height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+body.laddaned-vy .highlight-box p {
+  color: #4a5951;
+  font-weight: 600; 
+  font-size: 32px;
+  line-height: 1.2; 
+ 
+}
+
+body.laddaned-vy .highlight-box h1 {
+  color: #4a5951;
+  font-weight: 800; 
+  font-size: 42px;
+  line-height: 1.2; 
+ 
+}
+
+
+.download-button {
+  padding: 2rem 4rem; 
+  background-color: #4a5951; 
+  color: white; 
+  font-size: 24px; 
+ 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+  display: inline-block; 
+  margin-top: 40px; 
+
+}
+
+.download-button:hover {
+  background-color: #763F46; 
+}
+
+body.laddaned-vy .katt-bild {
+  position: fixed; 
+  right: 20px; 
+  top: 420px; 
+  transform: translateY(-50%); 
+  width: 35%; 
+  max-width: 600px;
+  max-height: 80%;
+  height: auto;
+  object-fit: contain; 
+}
+
+.burger-menu, .burger-menu-btn{
+  display: none;
+}
+
+/* MOBILE VERSION*/
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    display: none; /* Hide nav only on mobile */
+  }
+
+  .burger-menu-btn {
+    display: block;
+    position: fixed;
+    top: 45px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(Icons/burger-menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 101;
+    cursor: pointer;
+  }
+  
+  .burger-menu {
+    display: none;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: #ffffff;
+   
+  }
+
+  .burger-menu.open {
+    display: block;  
+  }
+
+  .burger-menu ul {
+    width: 100%;
+    height: calc(100vh - 100px); 
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    list-style-type: none;
+  }
+
+  .burger-menu ul li {
+    flex-basis: 100%;
+    border-top: 2px solid #4a5951;
+  }
+
+  .burger-menu ul li:last-child {
+    border-bottom: 2px solid #4a5951; 
+  }
+
+  .burger-menu ul li a {
+    display: block;
+    height: 100%;
+    font-size: 3rem;
+    padding: 30px 0;
+    flex-basis: 100%;
+    text-align: center;
+    color: #4a5951;
+    text-decoration: none;
+  }
+
+  
+.logo {
+ 
+  padding-left: none;
+  margin-right: auto;
+}
+
+.wrapper-main {
+  width: 80%;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  padding-top: 120px; 
+}
+
+body.hem-vy .highlight-box {
+  position: fixed; 
+  top: 190px; 
+  left: 29px; 
+  background-color: #c0cbbe;
+  color: #4a5951;
+  width: 600px;
+  max-width: 86%;
+  max-height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+body.hem-vy .highlight-box h1 {
+  font-weight: 800; 
+  font-size: 48px;
+  line-height: 1.2; 
+  text-align: center;
+}
+
+body.hem-vy .highlight-box p {
+  font-weight: 400; 
+  font-size: 26px;
+  line-height: 1,7; 
+  text-align: center;
+}
+
+body.hem-vy .katt-bild {
+  position: fixed;
+  left: 50%;
+  top: 555px; 
+  transform: translateX(-50%);
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  z-index: 0;
+}
+
+
+
+body.info-vy .highlight-box {
+  position: relative;
+  background-color: #c0cbbe;
+  color: #4a5951;
+  padding: 2rem;
+  margin: 1rem auto;
+  margin-top: 100px; 
+  border-radius: 8px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 800px;
+}
+
+body.info-vy .highlight-box h1 {
+  font-weight: 800; /* Minska font weight för H1 */
+  font-size: 48px;
+  line-height: 1.2; /* Minska line-height för H1 */
+  text-align: left;
+}
+
+body.info-vy .highlight-box p {
+  font-weight: 400; /* Minska font weight för p */
+  font-size: 20px;
+  line-height: 1,7; /* Minska line-height för p */
+  text-align: left;
+}
+
+
+body.info-vy .katt-bild {
+display: none;
+}
+
+
+body.laddaned-vy .highlight-box {
+  position: fixed; 
+  top: 250px; 
+  left: 44px; 
+  padding-top: 60px;
+  background-color: #c0cbbe;
+  color: #4a5951;
+  width: 600px;
+  height: 475px;
+  max-width: 80%;
+  max-height: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+body.laddaned-vy .highlight-box h1 {
+  font-weight: 800; /* Minska font weight för H1 */
+  font-size: 44px;
+  line-height: 1.2; /* Minska line-height för H1 */
+  text-align: center;
+}
+
+body.laddaned-vy .highlight-box p {
+  font-weight: 400; /* Minska font weight för p */
+  font-size: 26px;
+  line-height: 1,7; /* Minska line-height för p */
+  text-align: center;
+}
+
+body.laddaned-vy .katt-bild {
+display: none;
+}
+
+.download-button {
+  padding: 2rem 4rem; /* Justerar storleken på knappen */
+  background-color: #4a5951; /* Bakgrundsfärg på knappen */
+  color: white; /* Textfärgen på knappen */
+  font-size: 24px; /* Textstorlek på knappen */
+ 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; /* Smidig övergång för hover-effekten */
+  display: inline-block; /* Gör knappen inline-block för att centreras */
+  margin-top: 40px; /* Skapar ett mellanrum mellan h1 och knappen */
+  /* Ingen bredare bredd - behåll knappens storlek */
+}
+
+.download-button:hover {
+  background-color: #763F46; 
+}
+
+
+
+}

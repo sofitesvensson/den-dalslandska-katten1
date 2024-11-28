@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Den dalsländska katten</title>
+  <link rel="icon" href="Icons/favicon.ico" type="image/x-icon">
+
+  <!-- Importera Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+
+  <!-- Länka till din CSS-fil -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="hem-vy">
+
+  <header>
+    <a href="index.html">
+        <img src="logga.png" alt="Logotyp" class="logo">
+    </a>
+    <nav>
+        
+        <a href="Info.html">Info</a>
+        <a href="ladda ned.html">Läs</a>
+        <a href="https://www.dalslandskonstmuseum.se" target="_blank">Dalslands konstmuseum</a>
+    </nav>
+
+<div class="hero-section">
+  <div class="highlight-box">
+      <h1>Den dalsländska katten</h1>
+      <p>En essä av Sofi Svensson</p>
+  </div>
+  <img src="ensamkattmskuggamindre.png" alt="Katt" class="katt-bild">
+</div>
+
+<!-- Burger menu button -->
+<div class="burger-menu-btn"></div>
+</header>
+
+
+ <!-- Burger menu -->
+ <div class="burger-menu">
+  <ul>
+    <li><a href="Info.html">Info</a></li>
+    <li><a href="ladda ned.html">Läs</a></li>
+    <li><a href="https://www.dalslandskonstmuseum.se" target="_blank">Dalslands konstmuseum</a></li>
+  </ul>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const burgerMenuBtn = document.querySelector('.burger-menu-btn');
+  const burgerMenu = document.querySelector('.burger-menu');
+
+  burgerMenuBtn.addEventListener('click', function() {
+    if (burgerMenu.classList.contains('open')) {
+      burgerMenu.classList.remove('open');
+      burgerMenuBtn.style.backgroundImage = "url('Icons/burger-menu.png')";
+    } else {
+      burgerMenu.classList.add('open');
+      burgerMenuBtn.style.backgroundImage = "url('Icons/close.png')";
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>

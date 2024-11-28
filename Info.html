@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Den dalsländska katten</title>
+  <link rel="icon" href="Icons/favicon.ico" type="image/x-icon">
+
+  <!-- Importera Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Länka till din CSS-fil -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="info-vy">
+ 
+    <header>
+        <a href="index.html">
+            <img src="logga.png" alt="Logotyp" class="logo">
+        </a>
+        <nav>
+            <a href="Info.html" class="active">Info</a>
+            <a href="ladda ned.html">Läs</a>
+            <a href="https://www.dalslandskonstmuseum.se" target="_blank">Dalslands konstmuseum</a>
+        </nav>
+    </header>
+
+    <!-- Burger menu button -->
+<div class="burger-menu-btn"></div>
+</header>
+
+<!-- Burger menu -->
+ <div class="burger-menu">
+  <ul>
+    <li><a href="Info.html">Info</a></li>
+    <li><a href="ladda ned.html">Läs</a></li>
+    <li><a href="https://www.dalslandskonstmuseum.se" target="_blank">Dalslands konstmuseum</a></li>
+  </ul>
+</div>
+    
+ 
+  
+<div class="hero-section">
+  <div class="highlight-box">
+      <h3 >Den dalsländska katten är en essä av Sofi Svensson skriven under kursen Konstärligt skrivande som konstnärlig metod, 15 hp, 
+        HDK-Valand, Göteborgs Universitet, 2022/23. </h3>
+      <p>
+
+        Essän handlar om förhållandet mellan konstnär och olika material, hur slumpen leder dig framåt 
+        och hur ingenting egentligen behöver bli något. Det är i mötet mellan den som gör och materialet något händer.
+        
+        Sofi Svensson -87, har en MFA i keramikkonst, HDK-Valand, och utgår från en stark koppling 
+        till det handgjorda uttrycket i sitt konstnärsskap. Genom direkt arbete i olika material utforskar 
+        hon hur slumpmässiga och okontrollerade element samspelar med ett detaljrik formspråk. 
+        Berättelser om människor och deras liv är en central inspiration för Svensson; det är där hon finner motivens djup och närvaro. 
+        I hennes figurativa skulpturer, ofta med djurmotiv, strävar hon efter att förena det skeva och det precisa för att 
+        ge uttryck åt det levande och det tidlösa.
+         </p>
+
+         <p>
+         <a href="https://sofisvensson.se/" target="_blank">Klicka här för att komma till konstnärens hemsida</a> 
+        </p>
+ 
+</div>
+  <img src="ensamkattmskuggamindre.png" alt="Katt" class="katt-bild" -->
+</div>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const burgerMenuBtn = document.querySelector('.burger-menu-btn');
+  const burgerMenu = document.querySelector('.burger-menu');
+
+  burgerMenuBtn.addEventListener('click', function() {
+    if (burgerMenu.classList.contains('open')) {
+      burgerMenu.classList.remove('open');
+      burgerMenuBtn.style.backgroundImage = "url('Icons/burger-menu.png')";
+    } else {
+      burgerMenu.classList.add('open');
+      burgerMenuBtn.style.backgroundImage = "url('Icons/close.png')";
+    }
+  });
+});
+</script>
+
+
+
+</body>
+</html>
